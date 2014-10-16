@@ -1,0 +1,162 @@
+tanglu-artwork (0.6.1) staging; urgency=medium
+
+  * Plymouth themes need to depend on the plymouth-themes
+    package, which contains the two-step plugin since the last
+    update of Plymouth.
+
+ -- Matthias Klumpp <mak@debian.org>  Thu, 16 Oct 2014 16:54:24 +0200
+
+tanglu-artwork (0.6.0) staging; urgency=medium
+
+  * Update Tanglu artwork paths (to make renewing the theme easier)
+  * Drop dependency on plymouth-drm, has been merged into the
+    core package
+
+ -- Matthias Klumpp <mak@debian.org>  Sun, 12 Oct 2014 20:46:42 +0200
+
+tanglu-artwork (0.5.9) staging; urgency=medium
+
+  * Exchange all wallpapers with the new one in
+    - kde/wallpaper/tanglu/contents/images/
+    - gnome/backgrounds/tanglu/
+
+ -- Thomas Funk <t.funk@web.de>  Mon, 08 Sep 2014 19:51:32 +0200
+
+tanglu-artwork (0.5.8) staging; urgency=medium
+
+  * Add new KSplash theme, matching sddm
+
+ -- Matthias Klumpp <mak@debian.org>  Sat, 23 Aug 2014 17:02:32 +0200
+
+tanglu-artwork (0.5.7) staging; urgency=medium
+
+  * Correctly set KDM theme in our systemd world
+
+ -- Matthias Klumpp <mak@debian.org>  Fri, 22 Aug 2014 19:30:42 +0200
+
+tanglu-artwork (0.5.6) staging; urgency=medium
+
+  * Add a temporary wallpaper for the Bartholomea development
+    version.
+
+ -- Matthias Klumpp <mak@debian.org>  Wed, 12 Aug 2014 18:06:28 +0200
+
+tanglu-artwork (0.5.5) staging; urgency=low
+
+  * Remove alternatives in prerm
+  * Update default wallpaper for Aequorea 
+
+ -- Matthias Klumpp <mak@debian.org>  Thu, 20 Feb 2014 22:00:26 +0100
+
+tanglu-artwork (0.5.4) staging; urgency=low
+
+  * Include new Tanglu plymouth bootsplash, keep
+    previous one in separate package.
+  * Prepare for upcoming artwork changes, FFe granted.
+
+ -- Matthias Klumpp <mak@debian.org>  Tue, 18 Feb 2014 14:28:46 +0100
+
+tanglu-artwork (0.5.3) staging; urgency=low
+
+  * Fix typo in install file
+
+ -- Matthias Klumpp <mak@debian.org>  Sat, 18 Jan 2014 00:42:25 +0100
+
+tanglu-artwork (0.5.2) staging; urgency=low
+
+  * Fix some issues while registering new KDE designs
+    - Depend on KDM for KDM theming
+    - Place ksplash initial config in right directory
+  * Add distributor logo to base artwork
+
+ -- Matthias Klumpp <mak@debian.org>  Sat, 18 Jan 2014 00:26:42 +0100
+
+tanglu-artwork (0.5.1) staging; urgency=low
+
+  * Add KDM and KSplash theme from Caledonia suite
+    - We want to have a light theme with an user-switcher
+      for KDE.
+  * Make themes default automatically.
+
+ -- Matthias Klumpp <mak@debian.org>  Fri, 17 Jan 2014 14:56:48 +0100
+
+tanglu-artwork (0.5.0) staging; urgency=low
+
+  * Added new tanglu-artwork-base package with basic artwork
+    - Include user faces for new user to choose from
+      (taken from GNOME, GPLv2+)
+  * Added generic user icon to fix live installer
+  * Update dependencies
+
+ -- Matthias Klumpp <mak@debian.org>  Fri, 17 Jan 2014 10:08:20 +0100
+
+tanglu-artwork (0.4.4) staging; urgency=low
+
+  * Fix path to Plymouth theme data
+
+ -- Matthias Klumpp <mak@debian.org>  Tue, 12 Nov 2013 18:42:46 +0100
+
+tanglu-artwork (0.4.3) staging; urgency=low
+
+  * Install Plymouth theme into /usr/share and always
+    set it as default theme.
+
+ -- Matthias Klumpp <mak@debian.org>  Tue, 12 Nov 2013 15:36:34 +0100
+
+tanglu-artwork (0.4.2) staging; urgency=low
+
+  * Updated Plymouth theme
+  * Added more wallpapers in different sizes, for KDE anf GNOME
+
+ -- Matthias Klumpp <mak@debian.org>  Fri, 06 Sep 2013 20:42:54 -0700
+
+tanglu-artwork (0.4.1) staging; urgency=low
+
+  * Fix broken Plymouth theme
+  * Fix theme install routines
+  * Add placeholders for additional (common) KDE wallpaper sizes
+
+ -- Matthias Klumpp <mak@debian.org>  Thu, 05 Sep 2013 17:56:12 -0700
+
+tanglu-artwork (0.4) staging; urgency=low
+
+  * Update wallpapers with high resolution.
+  * Update GDM 3 background and GRUB wallpaper
+    - GRUB wallpaper is now completely black
+  * Update the Plymouth animation
+
+ -- Howard Chan <smartboyhw@gmail.com>  Thu, 05 Sep 2013 22:44:44 +0800
+
+tanglu-artwork (0.3) staging; urgency=low
+
+  * Include first few basic Tanglu wallpapers
+  * Add very simple GDM-3 theme
+  * Bump priority of Plymouth theme
+
+ -- Matthias Klumpp <mak@debian.org>  Mon, 02 Sep 2013 21:16:04 -0700
+
+tanglu-artwork (0.2.1) staging; urgency=low
+
+  * Include Tanglu GRUB2 wallpaper
+
+ -- Matthias Klumpp <mak@debian.org>  Sun, 01 Sep 2013 08:14:02 -0700
+
+tanglu-artwork (0.2) staging; urgency=low
+
+  * plymouth: New theme, remove the spinning logo, add
+    progress-bar
+  * debian/copyright: Update to package contents
+
+ -- Matthias Klumpp <mak@debian.org>  Fri, 30 Aug 2013 18:04:12 -0700
+
+tanglu-artwork (0.1.1) staging; urgency=low
+
+  * plymouth-theme: Depend on plymouth-drm
+
+ -- Matthias Klumpp <mak@debian.org>  Wed, 14 Aug 2013 22:25:25 +0000
+
+tanglu-artwork (0.1) staging; urgency=low
+
+  * Initial release
+
+ -- Matthias Klumpp <mak@debian.org>  Wed, 14 Aug 2013 20:34:56 +0000

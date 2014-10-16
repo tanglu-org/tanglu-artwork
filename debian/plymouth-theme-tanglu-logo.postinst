@@ -1,0 +1,32 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    configure)
+	update-alternatives \
+		--install /usr/share/plymouth/themes/default.plymouth default.plymouth \
+		/usr/share/plymouth/themes/tanglu-logo/tanglu-logo.plymouth 160
+
+	plymouth-set-default-theme tanglu-logo
+	if which update-initramfs >/dev/null 2>&1
+	then
+	    update-initramfs -u -k all
+	fi
+
+	if [ -e /boot/grub/grub.cfg ] && which update-grub2 >/dev/null 2>&1
+	then
+	    update-grub2
+	fi
+	;;
+
+    abort-upgrade|abort-deconfigure|abort-remove)
+	;;
+
+    *)
+	echo "$0 called with unknown argument \`$1'" 1>&2
+	exit 1
+	;;
+esac
+
+#DEBHELPER#
+exit 0

@@ -1,0 +1,28 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    remove)
+		if [ -f /etc/kde4/kdm/kdmrc ]; then
+			# make sure theme is no longer in use
+			sed -i 's/^Theme=\/usr\/share\/kde4\/apps\/kdm\/themes\/Caledonia/Theme=\/usr\/share\/kde4\/apps\/kdm\/themes\/elarun/g' /etc/kde4/kdm/kdmrc
+		fi
+	;;
+
+    purge)
+	;;
+
+    upgrade|failed-upgrade|disappear)
+	;;
+
+    abort-install|abort-upgrade)
+	;;
+
+    *)
+	echo "$0 called with unknown argument \`$1'" 1>&2
+	exit 1
+	;;
+esac
+
+#DEBHELPER#
+exit 0

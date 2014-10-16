@@ -1,0 +1,67 @@
+Source: tanglu-artwork
+Section: misc
+Priority: optional
+Maintainer: Tanglu Artwork Team <tanglu-devel-discuss@lists.tanglu.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+
+Package: plymouth-theme-tanglu-logo
+Architecture: all
+Depends: plymouth,
+         plymouth-themes,
+         ${misc:Depends}
+Provides: plymouth-theme
+Description: Graphical boot animation and logger - Tanglu Logo theme
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the default Tanglu theme.
+
+Package: plymouth-theme-tanglu-progress
+Architecture: all
+Depends: plymouth,
+         plymouth-themes,
+         ${misc:Depends}
+Provides: plymouth-theme
+Description: Graphical boot animation and logger - Tanglu Progress theme
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains a Tanglu bootsplash with progressing animation.
+
+Package: grub-theme-tanglu
+Architecture: all
+Depends: grub-common,
+         ${misc:Depends}
+Description: GRand Unified Bootloader, version 2 (Tanglu theme)
+ GRUB is a portable, powerful bootloader.
+ .
+ This package contains the default Tanglu theme.
+
+Package: tanglu-artwork-base
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: grub-theme-tanglu,
+            plymouth-theme-tanglu-logo
+Description: Basic artwork for Tanglu desktop systems
+ This package contains basic artwork for Tanglu desktop
+ systems, such as user-faces and the distributor logo.
+
+Package: tanglu-theme-gnome
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: tanglu-artwork-base
+Description: Tanglu theme for the GNOME desktop
+ This package contains wallpapers and additional artwork
+ for the GNOME desktop.
+
+Package: tanglu-theme-kde
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: tanglu-artwork-base,
+            tanglu-kde-settings-desktop
+Description: Tanglu theme for the KDE desktops
+ This package contains artwork for the desktops developed
+ by KDE, such as a KDM theme, KSplash theme and wallpapers.
