@@ -1,5 +1,2 @@
-kde/kdm-caledonia/* /usr/share/kde4/apps/kdm/themes/Caledonia/
-kde/ksplash-tanglu/* /usr/share/kde4/apps/ksplash/Themes/Tanglu/
-kde/ksplashrc usr/share/tanglu-kde-default-settings/kde4-profile/default/share/config
 kde/wallpaper/15-desktop-base.js /usr/share/kde4/apps/plasma-desktop/init/
 kde/wallpaper/tanglu/* /usr/share/wallpapers/tanglu
