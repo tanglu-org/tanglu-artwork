@@ -1,2 +1,2 @@
-kde/wallpaper/15-desktop-base.js /usr/share/kde4/apps/plasma-desktop/init/
+kde/wallpaper/15-default-wallpaper.js /usr/share/plasma/shells/org.kde.plasma.desktop/updates/
 kde/wallpaper/tanglu/* /usr/share/wallpapers/tanglu
