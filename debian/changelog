@@ -1,3 +1,11 @@
+tanglu-artwork (3.0) staging; urgency=medium
+
+  * kde: Drop custom KDM and KSplash designs
+  * Add new Chromodoris wallpaper
+  * debian/control: Add VCS-* fields
+
+ -- Matthias Klumpp <mak@debian.org>  Fri, 29 May 2015 19:56:36 +0200
+
 tanglu-artwork (0.6.1) staging; urgency=medium
 
   * Plymouth themes need to depend on the plymouth-themes
