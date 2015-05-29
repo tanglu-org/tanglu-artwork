@@ -3,6 +3,8 @@ Section: misc
 Priority: optional
 Maintainer: Tanglu Artwork Team <tanglu-devel-discuss@lists.tanglu.org>
 Build-Depends: debhelper (>= 9)
+Vcs-Git: https://github.com/tanglu-org/tanglu-artwork.git
+Vcs-Browser: https://github.com/tanglu-org/tanglu-artwork
 Standards-Version: 3.9.6
 
 Package: plymouth-theme-tanglu-logo
