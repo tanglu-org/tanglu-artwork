@@ -10,6 +10,11 @@ Files: ./plymouth/taglu-logo/*
 Copyright: 2013, the Tanglu Community
 License: GPL-3+
 
+Files: ./gnome/backgrounds/tanglu/*
+ ./kde/wallpaper/*
+Copyright: 2015, Valentin OVD <vovd.tanglu@gmail.com>
+License: CC-BY-3.0
+
 Files: debian/*
 Copyright: 2013 Matthias Klumpp <mak@debian.org>
 License: GPL-3+
@@ -30,3 +35,6 @@ License: GPL-3+
  .
  On Debian systems, the complete text of the GNU General
  Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
+
+License: CC-BY-3.0
+ See http://spdx.org/licenses/CC-BY-3.0
