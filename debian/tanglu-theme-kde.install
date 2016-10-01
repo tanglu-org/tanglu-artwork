@@ -1,2 +1,3 @@
-kde/wallpaper/15-default-wallpaper.js /usr/share/plasma/shells/org.kde.plasma.desktop/updates/
-kde/wallpaper/tanglu/* /usr/share/wallpapers/tanglu
+kde/config/15-default-wallpaper.js /usr/share/plasma/shells/org.kde.plasma.desktop/updates/
+kde/wallpapers/* /usr/share/wallpapers/
+kde/color-schemes/* /usr/share/color-schemes/
