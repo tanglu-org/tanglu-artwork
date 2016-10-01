@@ -1,3 +1,13 @@
+tanglu-artwork (3.8) staging; urgency=medium
+
+  * Add KDE color schemes
+    - Many thanks to Jens Reuterberg for working on the
+      style and wallpapers!
+  * Add fresh wallpapers for the Dasyatis release
+  * Optimize all JPEG images
+
+ -- Matthias Klumpp <mak@debian.org>  Sat, 01 Oct 2016 18:00:32 +0200
+
 tanglu-artwork (3.0) staging; urgency=medium
 
   * kde: Drop custom KDM and KSplash designs
